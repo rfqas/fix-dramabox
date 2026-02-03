@@ -17,9 +17,7 @@
             --nav-bg: rgba(20, 20, 25, 0.95);
         }
 
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
         body {
             font-family: 'Segoe UI', 'Roboto', system-ui, sans-serif;
@@ -33,7 +31,6 @@
             min-height: 100vh;
         }
 
-        /* Header & Nav */
         header {
             width: 100%;
             padding: 15px 40px;
@@ -61,11 +58,7 @@
             cursor: pointer;
         }
 
-        .nav-menu {
-            display: flex;
-            gap: 25px;
-            align-items: center;
-        }
+        .nav-menu { display: flex; gap: 25px; align-items: center; }
 
         .nav-item {
             color: var(--text-sec);
@@ -76,16 +69,7 @@
             cursor: pointer;
         }
 
-        .nav-item:hover,
-        .nav-item.active {
-            color: var(--text);
-        }
-
-        .search-container {
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
+        .nav-item:hover, .nav-item.active { color: var(--text); }
 
         .search-box {
             display: flex;
@@ -97,10 +81,7 @@
             transition: all 0.3s;
         }
 
-        .search-box:focus-within {
-            border-color: var(--primary);
-            background: #333;
-        }
+        .search-box:focus-within { border-color: var(--primary); background: #333; }
 
         input {
             background: transparent;
@@ -112,21 +93,6 @@
             width: 200px;
         }
 
-        .search-btn {
-            background: none;
-            border: none;
-            color: var(--text-sec);
-            cursor: pointer;
-            font-size: 16px;
-            padding: 5px;
-            transition: color 0.2s;
-        }
-
-        .search-btn:hover {
-            color: var(--primary);
-        }
-
-        /* Category Bar */
         .category-bar {
             width: 100%;
             max-width: 1400px;
@@ -135,10 +101,6 @@
             padding: 15px 40px;
             overflow-x: auto;
             scrollbar-width: none;
-        }
-
-        .category-bar::-webkit-scrollbar {
-            display: none;
         }
 
         .cat-chip {
@@ -150,34 +112,14 @@
             white-space: nowrap;
             cursor: pointer;
             transition: 0.3s;
-            border: 1px solid transparent;
         }
 
-        .cat-chip:hover {
-            background: #333;
-            color: white;
-            border-color: #444;
-        }
+        .cat-chip.active { background: var(--primary); color: white; }
 
-        .cat-chip.active {
-            background: var(--primary);
-            color: white;
-        }
+        main { width: 100%; max-width: 1400px; padding: 20px 40px; }
 
-        main {
-            width: 100%;
-            max-width: 1400px;
-            padding: 20px 40px;
-        }
+        h2 { font-size: 22px; border-left: 4px solid var(--primary); padding-left: 15px; margin-bottom: 25px; }
 
-        h2 {
-            font-size: 22px;
-            border-left: 4px solid var(--primary);
-            padding-left: 15px;
-            margin-bottom: 25px;
-        }
-
-        /* Movie Grid */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -189,308 +131,93 @@
             border-radius: 8px;
             overflow: hidden;
             cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-            z-index: 2;
-        }
+        .card:hover { transform: translateY(-8px); }
 
-        .card img {
-            width: 100%;
-            aspect-ratio: 2/3;
-            object-fit: cover;
-            display: block;
-        }
+        .card img { width: 100%; aspect-ratio: 2/3; object-fit: cover; }
 
-        .card-info {
-            padding: 12px;
-            background: linear-gradient(0deg, var(--card-bg) 0%, rgba(30, 30, 36, 0.8) 100%);
-        }
+        .card-info { padding: 12px; }
 
-        .card-title {
-            font-size: 14px;
-            font-weight: 500;
-            color: #eee;
-            margin: 0;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            line-height: 1.4;
-        }
+        .card-title { font-size: 14px; font-weight: 500; color: #eee; line-height: 1.4; }
 
-        /* Player Overlay */
         #player-overlay {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.98);
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.98);
             z-index: 200;
             display: none;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s;
         }
 
-        #player-overlay.active {
-            display: flex !important;
-            opacity: 1;
-        }
+        #player-overlay.active { display: flex; }
 
         .player-container {
             width: 100%;
             max-width: 450px;
-            /* Enhanced for vertical */
             aspect-ratio: 9/16;
             background: #000;
             border-radius: 12px;
             overflow: hidden;
             position: relative;
-            box-shadow: 0 0 50px rgba(229, 9, 20, 0.3);
         }
 
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            /* Fill the vertical container */
-        }
-
-        .controls {
-            margin-top: 25px;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            width: 100%;
-            max-width: 600px;
-        }
-
-        .ctrl-btn {
-            background: #333;
-            color: white;
-            border: none;
-            padding: 10px 25px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: 0.2s;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .ctrl-btn:hover {
-            background: var(--primary);
-        }
-
-        .btn-download {
-            background: #2a2a30;
-            border: 1px solid #444;
-        }
-
-        .btn-download:hover {
-            background: #2ecc71;
-            border-color: #2ecc71;
-            color: #fff;
-        }
+        video { width: 100%; height: 100%; object-fit: cover; }
 
         .close-btn {
             position: absolute;
-            top: 30px;
-            right: 30px;
-            background: rgba(255, 255, 255, 0.1);
+            top: 30px; right: 30px;
+            background: rgba(255,255,255,0.1);
             color: white;
-            width: 45px;
-            height: 45px;
+            width: 45px; height: 45px;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             cursor: pointer;
-            font-size: 20px;
-            transition: 0.2s;
-            z-index: 201;
-            /* Ensure above video */
         }
 
-        .close-btn:hover {
-            background: var(--primary);
-            transform: rotate(90deg);
-        }
-
-        /* Chapter List in Player */
         .chapter-list {
-            display: flex;
-            gap: 12px;
-            overflow-x: auto;
-            width: 90%;
-            max-width: 800px;
-            padding: 20px 10px;
-            margin-top: 15px;
-            scrollbar-width: thin;
-            scrollbar-color: var(--primary) #222;
-        }
-
-        .chapter-list::-webkit-scrollbar {
-            height: 6px;
-        }
-
-        .chapter-list::-webkit-scrollbar-thumb {
-            background: var(--primary);
-            border-radius: 3px;
+            display: flex; gap: 12px; overflow-x: auto;
+            width: 90%; max-width: 800px; padding: 20px 0;
         }
 
         .chapter-item {
-            min-width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #2a2a30;
-            border-radius: 10px;
-            cursor: pointer;
-            flex-shrink: 0;
-            font-size: 14px;
-            font-weight: bold;
-            color: #888;
-            transition: 0.2s;
-            border: 1px solid transparent;
+            min-width: 50px; height: 50px;
+            background: #2a2a30; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; font-weight: bold;
         }
 
-        .chapter-item:hover {
-            background: #333;
-            color: white;
-        }
+        .chapter-item.current { background: var(--primary); color: white; }
 
-        .chapter-item.current {
-            background: var(--primary);
-            color: white;
-            box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
-            transform: scale(1.1);
-            border-color: #ff4d4d;
-        }
-
-        /* Loading */
         .loader {
-            border: 3px solid rgba(255, 255, 255, 0.1);
+            border: 3px solid rgba(255,255,255,0.1);
             border-top: 3px solid var(--primary);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
+            border-radius: 50%; width: 40px; height: 40px;
             animation: spin 0.8s linear infinite;
-            display: none;
-            margin: 40px auto;
+            display: none; margin: 40px auto;
         }
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Footer */
-        footer {
-            width: 100%;
-            background-color: var(--nav-bg);
-            padding: 30px 20px;
-            margin-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            font-size: 14px;
-            color: var(--text-sec);
-        }
-
-        .footer-content p {
-            margin: 8px 0;
-            line-height: 1.6;
-        }
-
-        .credits a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .credits a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            header {
-                padding: 15px 20px;
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .nav-menu {
-                width: 100%;
-                justify-content: center;
-                gap: 20px;
-                font-size: 14px;
-            }
-
-            .search-box {
-                width: 100%;
-            }
-
-            input {
-                width: 100%;
-            }
-
-            .brand {
-                font-size: 20px;
-            }
-        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
     </style>
 </head>
 
 <body>
-
     <header>
         <div class="brand" onclick="loadLatest()">FIX DRAMABOX</div>
         <nav class="nav-menu">
             <a onclick="loadLatest()" class="nav-item active">Beranda</a>
-            <a onclick="loadRank(1)" class="nav-item">Trending</a>
+            <a onclick="loadRank()" class="nav-item">Trending</a>
             <a onclick="loadComingSoon()" class="nav-item">Coming Soon</a>
-            <a onclick="loadRank(2)" class="nav-item">Paling Dicari</a>
-            <a onclick="document.getElementById('searchInput').focus()" class="nav-item">Pencarian</a>
         </nav>
-        <div class="search-container">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Cari film atau series...">
-                <button class="search-btn" onclick="doSearch()">
-                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                    </svg>
-                </button>
-            </div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Cari film...">
+            <button style="background:none; border:none; color:white; cursor:pointer;" onclick="doSearch()">🔍</button>
         </div>
     </header>
-
-    <div class="category-bar">
-        <div class="cat-chip active" onclick="filterCategory(0, this)">Semua</div>
-        <div class="cat-chip" onclick="filterCategory(1357, this)">Romansa</div>
-        <div class="cat-chip" onclick="filterCategory(1324, this)">CEO</div>
-        <div class="cat-chip" onclick="filterCategory(1394, this)">Balas Dendam</div>
-        <div class="cat-chip" onclick="filterCategory(1361, this)">Wanita Kuat</div>
-        <div class="cat-chip" onclick="filterCategory(1348, this)">Keluarga</div>
-        <div class="cat-chip" onclick="filterCategory(1334, this)">Kekuatan Khusus</div>
-        <div class="cat-chip" onclick="filterCategory(1353, this)">Sejarah</div>
-        <div class="cat-chip" onclick="filterCategory(1405, this)">Terlahir Kembali</div>
-    </div>
 
     <main>
         <h2 id="sectionTitle">Terbaru Tayang</h2>
@@ -498,280 +225,124 @@
         <div id="grid" class="grid"></div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 FIX DRAMABOX. All Rights Reserved.</p>
-            <div class="credits">
-                <p>Scrape full all fitur dramabox by <strong>WH MODS DEV</strong></p>
-                <p>
-                    <a href="https://whatsapp.com/channel/0029VaZiRep4o7qHMGD3Ik06" target="_blank">WhatsApp Channel</a>
-                    |
-                    Instagram: @one2_xyz |
-                    YouTube: coming soon
-                </p>
-            </div>
-        </div>
-    </footer>
-
     <div id="player-overlay">
         <div class="close-btn" onclick="closePlayer()">✕</div>
-
         <div class="player-container">
             <video id="videoPlayer" controls autoplay playsinline loop></video>
         </div>
-
-        <h3 id="playerTitle" style="margin-top: 15px; text-align: center; font-weight: 500;">Judul</h3>
-
-        <div class="chapter-list" id="chapterList">
-            <!-- Chapters generated here -->
-        </div>
-
-        <div class="controls">
-            <button class="ctrl-btn" onclick="prevChapter()">Previous</button>
-            <button class="ctrl-btn" onclick="nextChapter()">Next</button>
-            <button class="ctrl-btn btn-download" onclick="downloadCurrentBook()">Download All</button>
-        </div>
+        <h3 id="playerTitle" style="margin-top:15px;">Judul</h3>
+        <div class="chapter-list" id="chapterList"></div>
     </div>
 
     <script>
-        const API_URL = '';
         let currentBookId = null;
         let currentChapters = [];
         let currentIndex = 1;
         let hls = null;
 
-        window.onload = async () => {
-            loadLatest();
-        };
+        window.onload = () => loadLatest();
 
-        // --- NAVIGATION ---
+        function showLoader(show) {
+            document.getElementById('loader').style.display = show ? 'block' : 'none';
+        }
 
-        async function loadLatest() {
-            updateNav('Beranda');
+        // MEMANGGIL FILE JSON STATIS DARI FOLDER PUBLIC
+        async function loadData(fileName) {
             showLoader(true);
             try {
-                const res = await fetch('/latest-aired');
+                const res = await fetch(`/${fileName}`); // Mencari di folder public
+                if (!res.ok) throw new Error('File tidak ditemukan');
                 const data = await res.json();
-                renderGrid(data.data);
-                document.getElementById('sectionTitle').innerText = 'Terbaru Tayang';
-            } catch (e) { console.error(e); }
+                renderGrid(data.data || data);
+            } catch (e) {
+                console.error("Gagal load data:", e);
+                document.getElementById('grid').innerHTML = `<p style="color:red; text-align:center;">Gagal memuat data ${fileName}. Pastikan file ada di folder public.</p>`;
+            }
             showLoader(false);
         }
 
-        async function loadRank(type) {
-            updateNav(type === 1 ? 'Trending' : 'Paling Dicari');
-            showLoader(true);
-            try {
-                const res = await fetch(`/rank?type=${type}`);
-                const data = await res.json();
-                renderGrid(data.data);
-                document.getElementById('sectionTitle').innerText = type === 1 ? 'Sedang Trending' : 'Paling Banyak Dicari';
-            } catch (e) { console.error(e); }
-            showLoader(false);
+        function loadLatest() {
+            document.getElementById('sectionTitle').innerText = 'Terbaru Tayang';
+            loadData('latest_already_aired.json');
         }
 
-        async function loadComingSoon() {
-            updateNav('Coming Soon');
-            showLoader(true);
-            try {
-                const res = await fetch('/coming-soon');
-                const data = await res.json();
-                renderGrid(data.data);
-                document.getElementById('sectionTitle').innerText = 'Segera Tayang';
-            } catch (e) { console.error(e); }
-            showLoader(false);
+        function loadRank() {
+            document.getElementById('sectionTitle').innerText = 'Sedang Trending';
+            loadData('rank_all_fitur.json');
         }
 
-        async function filterCategory(genreId, el) {
-            // Update chip active state
-            document.querySelectorAll('.cat-chip').forEach(c => c.classList.remove('active'));
-            el.classList.add('active');
-
-            showLoader(true);
-            try {
-                // Defaulting country=0, audio=0, access=0, sort=1
-                const res = await fetch(`/category?country=0&audio=0&access=0&genre=${genreId}&sort=1`);
-                const data = await res.json();
-                renderGrid(data.data);
-                document.getElementById('sectionTitle').innerText = `Kategori: ${el.innerText}`;
-            } catch (e) { console.error(e); }
-            showLoader(false);
+        function loadComingSoon() {
+            document.getElementById('sectionTitle').innerText = 'Segera Tayang';
+            loadData('latest_coming_soon.json');
         }
-
-        async function doSearch() {
-            const keyword = document.getElementById('searchInput').value;
-            if (!keyword) return;
-            showLoader(true);
-            try {
-                const res = await fetch(`/search?keyword=${encodeURIComponent(keyword)}`);
-                const data = await res.json();
-                renderGrid(data.data);
-                document.getElementById('sectionTitle').innerText = `Hasil pencarian: ${keyword}`;
-            } catch (e) { console.error(e); }
-            showLoader(false);
-        }
-
-        function updateNav(name) {
-            document.querySelectorAll('.nav-item').forEach(el => {
-                if (el.innerText === name) el.classList.add('active');
-                else el.classList.remove('active');
-            });
-        }
-
-        // --- RENDER ---
 
         function renderGrid(items) {
             const grid = document.getElementById('grid');
             grid.innerHTML = '';
-            if (!items || items.length === 0) {
-                grid.innerHTML = '<p style="text-align:center; width:100%; color: #888;">Tidak ada hasil ditemukan.</p>';
-                return;
-            }
+            if (!items) return;
             items.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'card';
                 card.onclick = () => openBook(item.bookId || item.id, item.bookName || item.name);
-
-                // Handling different image properties from different endpoints
-                const img = item.coverWap || item.cover || (item.imgList ? item.imgList[0] : null) || 'https://via.placeholder.com/200x300?text=No+Cover';
-                const title = item.bookName || item.name || 'Judul Tidak Diketahui';
-
+                const img = item.coverWap || item.cover || 'https://via.placeholder.com/200x300';
                 card.innerHTML = `
-                    <img src="${img}" alt="${title}">
-                    <div class="card-info">
-                        <div class="card-title">${title}</div>
-                    </div>
+                    <img src="${img}">
+                    <div class="card-info"><div class="card-title">${item.bookName || item.name}</div></div>
                 `;
                 grid.appendChild(card);
             });
         }
 
-        // --- PLAYER ---
-
         async function openBook(bookId, title) {
             currentBookId = bookId;
             document.getElementById('playerTitle').innerText = title;
-            currentChapters = [];
-
             document.getElementById('player-overlay').classList.add('active');
-
-            // Initial placeholder chapter loading
-            document.getElementById('chapterList').innerHTML = '<div style="color:#888; padding:10px;">Loading chapters...</div>';
-
+            
             try {
-                const res = await fetch(`/chapter-list?bookId=${bookId}`);
+                // Mencoba mencari file dump spesifik atau file utama
+                const res = await fetch(`/chapter_dump_${bookId}.json`).catch(() => fetch('/chapter_dump.json'));
                 const data = await res.json();
-
-                if (data.success && data.data && data.data.chapters) {
+                if (data.data && data.data.chapters) {
                     currentChapters = data.data.chapters;
                     renderChapterList();
                     playChapter(1);
-                } else {
-                    alert('Gagal mengambil daftar chapter');
                 }
-            } catch (e) {
-                console.error(e);
-                alert('Error ambil chapter');
-            }
+            } catch (e) { alert("Data chapter tidak ditemukan."); }
         }
 
         function renderChapterList() {
             const list = document.getElementById('chapterList');
             list.innerHTML = '';
             currentChapters.forEach((ch, idx) => {
-                const realIndex = idx + 1;
                 const btn = document.createElement('div');
-                btn.className = 'chapter-item';
-                btn.innerText = realIndex;
-                btn.onclick = () => playChapter(realIndex);
-                btn.id = `ch-${realIndex}`;
+                btn.className = 'chapter-item' + (idx + 1 === currentIndex ? ' current' : '');
+                btn.innerText = idx + 1;
+                btn.onclick = () => playChapter(idx + 1);
                 list.appendChild(btn);
             });
         }
 
-        async function playChapter(index) {
+        function playChapter(index) {
             currentIndex = index;
-            document.querySelectorAll('.chapter-item').forEach(el => el.classList.remove('current'));
-            const btn = document.getElementById(`ch-${index}`);
-            if (btn) btn.classList.add('current');
-            if (btn) btn.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-
-            try {
-                const res = await fetch(`/chapter-detail?bookId=${currentBookId}&index=${index}&total=${currentChapters.length}`);
-                const data = await res.json();
-
-                if (data.success && data.data) {
-                    const detail = data.data;
-                    console.log('Chapter Data:', detail);
-
-                    let videoUrl = findVideoUrl(detail);
-
-                    if (videoUrl) {
-                        playVideo(videoUrl);
-                    } else {
-                        alert('URL Video tidak ditemukan!');
-                    }
-                }
-            } catch (e) { console.error(e); }
-        }
-
-        function findVideoUrl(obj) {
-            // Priority 0: Check cdnList (New Structure)
-            if (obj.cdnList && Array.isArray(obj.cdnList) && obj.cdnList.length > 0) {
-                const cdn = obj.cdnList[0];
-                if (cdn.videoPathList && Array.isArray(cdn.videoPathList)) {
-                    const defaultVid = cdn.videoPathList.find(v => v.isDefault === 1);
-                    if (defaultVid && defaultVid.videoPath) return defaultVid.videoPath;
-                    if (cdn.videoPathList.length > 0 && cdn.videoPathList[0].videoPath) {
-                        return cdn.videoPathList[0].videoPath;
-                    }
-                }
+            renderChapterList();
+            const chapter = currentChapters[index - 1];
+            if (chapter && chapter.cdnList && chapter.cdnList[0].videoPathList) {
+                const url = chapter.cdnList[0].videoPathList[0].videoPath;
+                playVideo(url);
             }
-            // Priority 1: Transcoding URL
-            if (obj.transcodingUrl) { /* ... */ }
-            // Priority 2: Resources array
-            if (obj.resources && Array.isArray(obj.resources)) {
-                const res = obj.resources.find(r => r.url);
-                if (res) return res.url;
-            }
-            // Priority 3: Direct keys
-            if (obj.originalUrl) return obj.originalUrl;
-            if (obj.url && obj.url.startsWith('http')) return obj.url;
-            return null;
         }
 
         function playVideo(url) {
             const video = document.getElementById('videoPlayer');
-
             if (Hls.isSupported() && url.includes('.m3u8')) {
                 if (hls) hls.destroy();
                 hls = new Hls();
                 hls.loadSource(url);
                 hls.attachMedia(video);
-                hls.on(Hls.Events.MANIFEST_PARSED, function () {
-                    video.play();
-                });
-            }
-            else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = url;
-                video.addEventListener('loadedmetadata', function () {
-                    video.play();
-                });
+                hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
             } else {
                 video.src = url;
                 video.play();
-            }
-        }
-
-        function nextChapter() {
-            if (currentIndex < currentChapters.length) {
-                playChapter(currentIndex + 1);
-            }
-        }
-
-        function prevChapter() {
-            if (currentIndex > 1) {
-                playChapter(currentIndex - 1);
             }
         }
 
@@ -779,31 +350,18 @@
             document.getElementById('player-overlay').classList.remove('active');
             const video = document.getElementById('videoPlayer');
             video.pause();
-            video.src = '';
             if (hls) hls.destroy();
         }
 
-        function showLoader(show) {
-            document.getElementById('loader').style.display = show ? 'block' : 'none';
+        function doSearch() {
+            const kw = document.getElementById('searchInput').value.toLowerCase();
+            // Pencarian sederhana di file rank_all_fitur sebagai database sementara
+            fetch('/rank_all_fitur.json').then(r => r.json()).then(data => {
+                const results = data.data.filter(i => (i.bookName || i.name).toLowerCase().includes(kw));
+                renderGrid(results);
+                document.getElementById('sectionTitle').innerText = `Hasil Cari: ${kw}`;
+            });
         }
-
-        // --- DOWNLOAD ---
-        async function downloadCurrentBook() {
-            if (!currentBookId) return;
-            if (!confirm(`Apakah Anda yakin ingin mendownload semua chapter untuk Book ID: ${currentBookId}? Ini akan diproses di server.`)) return;
-
-            alert('Permintaan download dikirim. Cek konsol server untuk progress.');
-
-            try {
-                // Just trigger endpoint, don't wait for full result as it might be long
-                fetch(`/download?bookId=${currentBookId}`);
-            } catch (e) {
-                console.error(e);
-                alert('Gagal mengirim request download');
-            }
-        }
-
     </script>
 </body>
-
 </html>
