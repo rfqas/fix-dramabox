@@ -1,0 +1,412 @@
+{
+  "total_records": 7,
+  "generated_at": "2026-02-01T03:17:30.827Z",
+  "data": [
+    {
+      "bookId": "42000004855",
+      "bookName": "Pengawalku, Penyelamatku",
+      "coverWap": "https://hwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000004855/42000004855.jpg?t=1769412242778",
+      "chapterCount": 60,
+      "introduction": "Aris Natama seorang pengawal tingkat atas dengan keahlian luar biasa, disewa untuk melindungi Gita Wisman yang terjebak krisis dan intrik keluarga besar. Aris menghadapi serangan misterius, musuh kuat, serta kesalahpahaman di antara mereka. Dalam pertarungan penuh semangat, rahasia masa lalu terungkap dan misinya terselesaikan melalui perlindungan serta penebusan.",
+      "tags": [
+        "Perselingkuhan",
+        "Serangan Balik",
+        "Intrik Keluarga",
+        "Penebusan",
+        "Dewa Perang",
+        "Modern"
+      ],
+      "tagV3s": [
+        {
+          "tagId": 1341,
+          "tagName": "Perselingkuhan",
+          "tagEnName": "Betrayal"
+        },
+        {
+          "tagId": 1340,
+          "tagName": "Serangan Balik",
+          "tagEnName": "Counterattack"
+        },
+        {
+          "tagId": 1350,
+          "tagName": "Intrik Keluarga",
+          "tagEnName": "Family Intrigue"
+        },
+        {
+          "tagId": 1478,
+          "tagName": "Penebusan",
+          "tagEnName": "Redemption"
+        },
+        {
+          "tagId": 1330,
+          "tagName": "Dewa Perang",
+          "tagEnName": "War God"
+        },
+        {
+          "tagId": 1318,
+          "tagName": "Modern",
+          "tagEnName": "Modern"
+        }
+      ],
+      "isEntry": 0,
+      "index": 0,
+      "dataFrom": "算法_推荐剧",
+      "cardType": 1,
+      "markNamesConnectKey": ", ",
+      "reserveStatus": 0,
+      "bookShelfTime": 1770022800000,
+      "bookShelfStatus": 2,
+      "reserveSort": 0,
+      "reserveBookId": 1555,
+      "inLibrary": false
+    },
+    {
+      "bookId": "42000004867",
+      "bookName": "Dikhianati, Dinikahi Dewa Perang",
+      "coverWap": "https://hwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000004867/42000004867.jpg?t=1769414550877",
+      "chapterCount": 66,
+      "introduction": "Putri sah Bella Sutara dirampas tunangan dan maharnya oleh adik tiri, Livia, sementara mantan suaminya ingin menjadikannya selir. Demi membalas, Bella menikah dengan penguasa utara yang dikira tiran tua. Di malam nikah, ia kaget suaminya adalah Bobby Kemal, dewa perang yang pernah ia selamatkan. Bersama, mereka menundukkan musuh, menggagalkan intrik, membuka perdagangan, dan membangun kejayaan.",
+      "tags": [
+        "Balas Dendam",
+        "Pembalikan Identitas",
+        "Intrik Istana",
+        "Dewa Perang",
+        "Wanita Mandiri",
+        "Cinta Setelah Menikah"
+      ],
+      "tagV3s": [
+        {
+          "tagId": 1394,
+          "tagName": "Balas Dendam",
+          "tagEnName": "Revenge"
+        },
+        {
+          "tagId": 1395,
+          "tagName": "Pembalikan Identitas",
+          "tagEnName": "Hidden Identity"
+        },
+        {
+          "tagId": 1410,
+          "tagName": "Intrik Istana",
+          "tagEnName": "Palace Intrigue"
+        },
+        {
+          "tagId": 1369,
+          "tagName": "Dewa Perang",
+          "tagEnName": "War God"
+        },
+        {
+          "tagId": 1452,
+          "tagName": "Wanita Mandiri",
+          "tagEnName": "Independent Woman"
+        },
+        {
+          "tagId": 1393,
+          "tagName": "Cinta Setelah Menikah",
+          "tagEnName": "Love After Marriage"
+        }
+      ],
+      "isEntry": 0,
+      "index": 0,
+      "dataFrom": "算法_推荐剧",
+      "cardType": 1,
+      "markNamesConnectKey": ", ",
+      "reserveStatus": 0,
+      "bookShelfTime": 1770022800000,
+      "bookShelfStatus": 2,
+      "reserveSort": 0,
+      "reserveBookId": 1569,
+      "inLibrary": false
+    },
+    {
+      "bookId": "42000004864",
+      "bookName": "Suami yang Diremehkan",
+      "coverWap": "https://hwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000004864/42000004864.jpg?t=1769414312425",
+      "chapterCount": 70,
+      "introduction": "Hans Danar, pewaris konglomerat, menyembunyikan identitas dan hidup 5 tahun sebagai menantu keluarga Lurda untuk membalas budi. Ia diam-diam membantu istrinya, Lisa Lurda, naik menjadi CEO wanita elite. Terhasut teman jahat, Lisa meninggalkan Hans. Di perjamuan besar, ia terkejut melihat mantan suaminya berdiri di puncak kekuasaan.",
+      "tags": [
+        "Pembalikan Identitas",
+        "Serangan Balik",
+        "Mengejar Istri",
+        "Menantu Pria",
+        "Tokoh Legendaris",
+        "Modern"
+      ],
+      "tagV3s": [
+        {
+          "tagId": 1338,
+          "tagName": "Pembalikan Identitas",
+          "tagEnName": "Hidden Identity"
+        },
+        {
+          "tagId": 1340,
+          "tagName": "Serangan Balik",
+          "tagEnName": "Counterattack"
+        },
+        {
+          "tagId": 1680,
+          "tagName": "Mengejar Istri",
+          "tagEnName": "Winning Her Back"
+        },
+        {
+          "tagId": 1329,
+          "tagName": "Menantu Pria",
+          "tagEnName": "Son-in-Law"
+        },
+        {
+          "tagId": 1332,
+          "tagName": "Tokoh Legendaris",
+          "tagEnName": "Divine Tycoon"
+        },
+        {
+          "tagId": 1318,
+          "tagName": "Modern",
+          "tagEnName": "Modern"
+        }
+      ],
+      "isEntry": 0,
+      "index": 0,
+      "dataFrom": "算法_推荐剧",
+      "cardType": 1,
+      "markNamesConnectKey": ", ",
+      "reserveStatus": 0,
+      "bookShelfTime": 1770022800000,
+      "bookShelfStatus": 2,
+      "reserveSort": 0,
+      "reserveBookId": 1570,
+      "inLibrary": false
+    },
+    {
+      "bookId": "42000005239",
+      "bookName": "Murka Putri Dunia Bawah",
+      "coverWap": "https://hwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000005239/42000005239.jpg?t=1769679678055",
+      "chapterCount": 73,
+      "introduction": "Fera, putri penguasa dunia bawah, menyembunyikan identitasnya setelah menikah.  Putrinya, Xyra, terserang penyakit jantung saat ulang tahun. Dalam perjalanan ke rumah sakit, Fera bentrok dengan kekasih ayahnya, Dea. Dengan dukungan keluarga, Fera akhirnya membalas dendam dan mengusir suaminya yang selingkuh tanpa harta.",
+      "tags": [
+        "Balas Dendam",
+        "Pembalikan Identitas",
+        "Perselingkuhan",
+        "Keluarga",
+        "Mafia",
+        "Modern"
+      ],
+      "tagV3s": [
+        {
+          "tagId": 1394,
+          "tagName": "Balas Dendam",
+          "tagEnName": "Revenge"
+        },
+        {
+          "tagId": 1395,
+          "tagName": "Pembalikan Identitas",
+          "tagEnName": "Hidden Identity"
+        },
+        {
+          "tagId": 1400,
+          "tagName": "Perselingkuhan",
+          "tagEnName": "Betrayal"
+        },
+        {
+          "tagId": 1408,
+          "tagName": "Keluarga",
+          "tagEnName": "Family Bonds"
+        },
+        {
+          "tagId": 1364,
+          "tagName": "Mafia",
+          "tagEnName": "Mafia"
+        },
+        {
+          "tagId": 1352,
+          "tagName": "Modern",
+          "tagEnName": "Modern"
+        }
+      ],
+      "isEntry": 0,
+      "index": 0,
+      "dataFrom": "算法_推荐剧",
+      "cardType": 1,
+      "markNamesConnectKey": ", ",
+      "reserveStatus": 0,
+      "bookShelfTime": 1770627600000,
+      "bookShelfStatus": 2,
+      "reserveSort": 0,
+      "reserveBookId": 1602,
+      "inLibrary": false
+    },
+    {
+      "bookId": "42000005232",
+      "bookName": "Saat Bertemu Lagi",
+      "coverWap": "https://hwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000005232/42000005232.jpg?t=1769677589011",
+      "chapterCount": 72,
+      "introduction": "Luna Yarvi, agen internasional yang menyamar sebagai guru privat, mendidik Leo Tyaga, pewaris muda keras kepala. Ketegasannya menembus sikap liar Leo dan membuka luka lama. Mengetahui Leo putra penolongnya, Luna menjadi pelindung. Konflik menumbuhkan cinta hingga takdir memisahkan. Tiga tahun berlalu, Leo sukses, Luna hidup sederhana; reuni menyalakan cinta penyelamat jiwa.",
+      "tags": [
+        "Pembalikan Identitas",
+        "Serangan Balik",
+        "Keluarga",
+        "Kekuatan Khusus",
+        "Wanita Karier",
+        "Cinta Terlarang"
+      ],
+      "tagV3s": [
+        {
+          "tagId": 1395,
+          "tagName": "Pembalikan Identitas",
+          "tagEnName": "Hidden Identity"
+        },
+        {
+          "tagId": 1399,
+          "tagName": "Serangan Balik",
+          "tagEnName": "Counterattack"
+        },
+        {
+          "tagId": 1408,
+          "tagName": "Keluarga",
+          "tagEnName": "Family Bonds"
+        },
+        {
+          "tagId": 1371,
+          "tagName": "Kekuatan Khusus",
+          "tagEnName": "The Chosen One"
+        },
+        {
+          "tagId": 1375,
+          "tagName": "Wanita Karier",
+          "tagEnName": "Career Woman"
+        },
+        {
+          "tagId": 1379,
+          "tagName": "Cinta Terlarang",
+          "tagEnName": "Forbidden Love"
+        }
+      ],
+      "isEntry": 0,
+      "index": 0,
+      "dataFrom": "算法_推荐剧",
+      "cardType": 1,
+      "markNamesConnectKey": ", ",
+      "reserveStatus": 0,
+      "bookShelfTime": 1770627600000,
+      "bookShelfStatus": 2,
+      "reserveSort": 0,
+      "reserveBookId": 1603,
+      "inLibrary": false
+    },
+    {
+      "bookId": "42000005284",
+      "bookName": "Cinta yang Hilang",
+      "coverWap": "https://hwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000005284/42000005284.jpg?t=1769751707053",
+      "chapterCount": 61,
+      "introduction": "Tujuh tahun lalu, Shani Melia dan tunangannya Leon Wira diserang preman di gunung. Shani selamatkan Leon namun terkena demensia, sementara orang tuanya tewas mencarinya. Leon merawat Shani sendiri, hingga ibunya memaksa pernikahan dengan Mery Salim. Shani pergi, Leon menyesal, sakit kanker, dan terpaksa menikah. Enam tahun kemudian, Leon menemukan pengemis mirip Shani—yang ternyata benar dirinya.",
+      "tags": [
+        "Amnesia",
+        "Kesempatan Kedua",
+        "Penyesalan",
+        "Gadis Naif",
+        "Cinta Paksaan",
+        "Modern"
+      ],
+      "tagV3s": [
+        {
+          "tagId": 1402,
+          "tagName": "Amnesia",
+          "tagEnName": "Amnesia"
+        },
+        {
+          "tagId": 1392,
+          "tagName": "Kesempatan Kedua",
+          "tagEnName": "Second Chance"
+        },
+        {
+          "tagId": 1654,
+          "tagName": "Penyesalan",
+          "tagEnName": "All-Too-Late"
+        },
+        {
+          "tagId": 1374,
+          "tagName": "Gadis Naif",
+          "tagEnName": "Innocent Damsel"
+        },
+        {
+          "tagId": 1378,
+          "tagName": "Cinta Paksaan",
+          "tagEnName": "Forced Love"
+        },
+        {
+          "tagId": 1352,
+          "tagName": "Modern",
+          "tagEnName": "Modern"
+        }
+      ],
+      "isEntry": 0,
+      "index": 0,
+      "dataFrom": "算法_推荐剧",
+      "cardType": 1,
+      "markNamesConnectKey": ", ",
+      "reserveStatus": 0,
+      "bookShelfTime": 1770627600000,
+      "bookShelfStatus": 2,
+      "reserveSort": 0,
+      "reserveBookId": 1607,
+      "inLibrary": false
+    },
+    {
+      "bookId": "42000005244",
+      "bookName": "Usai Cerai, Dia Menjadi Sukses",
+      "coverWap": "https://hwztchapter.dramaboxdb.com/data/cppartner/4x2/42x0/420x0/42000005244/42000005244.jpg?t=1769682939303",
+      "chapterCount": 50,
+      "introduction": "Martin pulang dari perjalanan bisnisnya selama setahun dan mendapati Yundah menjadikan teman masa kecilnya sebagai direktur. Martin ingin menyingkirkannya, tapi Yundah dan para eksekutif bersatu menekan Martin. Sadar hendak disingkirkan, Martin melawan balik, akhirnya Yundah dan Stefan dipenjara, Martin dan Hilda hidup bahagia.",
+      "tags": [
+        "Balas Dendam",
+        "Serangan Balik",
+        "Keadilan",
+        "Kekuatan Khusus",
+        "Modern",
+        "Pria Dominan"
+      ],
+      "tagV3s": [
+        {
+          "tagId": 1337,
+          "tagName": "Balas Dendam",
+          "tagEnName": "Revenge"
+        },
+        {
+          "tagId": 1340,
+          "tagName": "Serangan Balik",
+          "tagEnName": "Counterattack"
+        },
+        {
+          "tagId": 10037,
+          "tagName": "Keadilan",
+          "tagEnName": "Justice Served"
+        },
+        {
+          "tagId": 1334,
+          "tagName": "Kekuatan Khusus",
+          "tagEnName": "The Chosen One"
+        },
+        {
+          "tagId": 1318,
+          "tagName": "Modern",
+          "tagEnName": "Modern"
+        },
+        {
+          "tagId": 1323,
+          "tagName": "Pria Dominan",
+          "tagEnName": "Powerful Male Lead"
+        }
+      ],
+      "isEntry": 0,
+      "index": 0,
+      "dataFrom": "算法_推荐剧",
+      "cardType": 1,
+      "markNamesConnectKey": ", ",
+      "reserveStatus": 0,
+      "bookShelfTime": 1771837200000,
+      "bookShelfStatus": 2,
+      "reserveSort": 0,
+      "reserveBookId": 1604,
+      "inLibrary": false
+    }
+  ]
+}
