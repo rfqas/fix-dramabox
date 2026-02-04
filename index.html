@@ -416,15 +416,28 @@
 
         function playVideo(url) {
             const video = document.getElementById('videoPlayer');
+
+            // Reset error handler
+            video.onerror = (e) => {
+                console.error("Video Error:", video.error);
+                alert(`Gagal memutar video: ${video.error.message || 'Unknown Error'}`);
+            };
+
             if (Hls.isSupported() && url.includes('.m3u8')) {
                 if (hls) hls.destroy();
                 hls = new Hls();
                 hls.loadSource(url);
                 hls.attachMedia(video);
                 hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+                hls.on(Hls.Events.ERROR, function (event, data) {
+                    if (data.fatal) {
+                        console.error("HLS Error:", data);
+                        alert("HLS Error: " + data.type);
+                    }
+                });
             } else {
                 video.src = url;
-                video.play();
+                video.play().catch(e => console.error("Play failed:", e));
             }
         }
 

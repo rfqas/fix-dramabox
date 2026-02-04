@@ -10,35 +10,35 @@
       "videoPathList": [
         {
           "quality": 1080,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 0,
           "isEntry": 0,
           "isVipEquity": 1
         },
         {
           "quality": 720,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 1,
           "isEntry": 0,
           "isVipEquity": 0
         },
         {
           "quality": 540,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 0,
           "isEntry": 0,
           "isVipEquity": 0
         },
         {
           "quality": 360,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 0,
           "isEntry": 0,
           "isVipEquity": 0
         },
         {
           "quality": 144,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 0,
           "isEntry": 0,
           "isVipEquity": 0
@@ -51,35 +51,35 @@
       "videoPathList": [
         {
           "quality": 1080,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 0,
           "isEntry": 0,
           "isVipEquity": 1
         },
         {
           "quality": 720,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 1,
           "isEntry": 0,
           "isVipEquity": 0
         },
         {
           "quality": 540,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 0,
           "isEntry": 0,
           "isVipEquity": 0
         },
         {
           "quality": 360,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 0,
           "isEntry": 0,
           "isVipEquity": 0
         },
         {
           "quality": 144,
-          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+          "videoPath": "https://www.w3schools.com/html/mov_bbb.mp4",
           "isDefault": 0,
           "isEntry": 0,
           "isVipEquity": 0
@@ -98,3 +98,4 @@
   "spriteSnapshotUrl": "https://hwztvideo.dramaboxdb.com/38/8x5/85x8/858x2/85820000024/700182583_1/700182583_shot.vtt",
   "chargeChapter": false
 }
+
