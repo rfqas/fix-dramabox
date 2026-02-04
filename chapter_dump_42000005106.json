@@ -10,7 +10,7 @@
       "videoPathList": [
         {
           "quality": 1080,
-          "videoPath": "https://hwztvideo.dramaboxdb.com/31/6x5/65x8/658x2/65820000024/700182513_1/700182513.1080p.wz.g264.mp4?Expires=1769997600&Signature=rEL4pTPzWlldb8oiQv2~phyUqTUTgm1TYwGA~0Q4XzuurwosSKxkvHcUjl5pA9HYYJGKLPEmlRBp~x4-fcKYBIW45GvK8F2oySDKk-VTjj24lUajnFDqjz3WVeSxO7b559CJTrEn3I0Hb3MDdgdj-X9WCWTOGfQnE1j6J4K76VL6qIMvteJeQ5SIB~k614gW~dARi03-cXRfFAPGD7ff39DPa-F99xb7wAIxu~I8zOAjrleNdGE-tjDLaQQxIgu3y8LYk1sH8~-xReUkR147AUCVdVLY32Sgq7wUTHGlVfkmLfLjgC-jeCjtzSZrHa5FakxTmnBN-O9fd~ldZiAkmA__&Key-Pair-Id=K3HA2TLE2QH99V",
+          "videoPath": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
           "isDefault": 0,
           "isEntry": 0,
           "isVipEquity": 1
