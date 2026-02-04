@@ -1,8 +1,6 @@
-{
-  "rewrites": [
+"rewrites": [
     {
-      "source": "/(.*\\.json)",
-      "destination": "/public/$1"
+        "source": "/([^/]+\\.json)",
+        "destination": "/public/$1"
     }
-  ]
-}
+]
