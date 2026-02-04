@@ -1,8 +1,0 @@
-{
-    "rewrites": [
-        {
-            "source": "/([^/]+\\.json)",
-            "destination": "/public/$1"
-        }
-    ]
-}
