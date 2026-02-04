@@ -368,15 +368,28 @@
             document.getElementById('player-overlay').classList.add('active');
 
             try {
-                // Mencoba mencari file dump spesifik atau file utama
-                const res = await fetch(`/chapter_dump_${bookId}.json`).catch(() => fetch('/chapter_dump.json'));
+                // 1. Coba cari file spesifik
+                let res = await fetch(`/chapter_dump_${bookId}.json`);
+
+                // 2. Jika 404 (tidak ketemu), pakai file default
+                if (!res.ok) {
+                    console.warn(`File chapter_dump_${bookId}.json tidak ada (404), switch ke fallback default.`);
+                    res = await fetch('/chapter_dump.json');
+                }
+
+                // 3. Jika masih error juga, baru lempar exception
+                if (!res.ok) throw new Error("File chapter default juga tidak ditemukan!");
+
                 const data = await res.json();
                 if (data.data && data.data.chapters) {
                     currentChapters = data.data.chapters;
                     renderChapterList();
                     playChapter(1);
                 }
-            } catch (e) { alert("Data chapter tidak ditemukan."); }
+            } catch (e) {
+                console.error("OpenBook Error:", e);
+                alert("Maaf, data chapter untuk film ini belum tersedia.");
+            }
         }
 
         function renderChapterList() {
