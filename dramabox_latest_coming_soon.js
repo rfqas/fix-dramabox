@@ -13,7 +13,7 @@ TTD BY WH MODS DEV # JANGAN HAPUS CREDIT, YANG HAPUS CREDITS GW DOAIN BAKAL ADA 
 */
 import axios from "axios";
 import fs from "fs"
-import { tokennya, DramaboxApp } from "../token_dramabox.js";
+import { tokennya, DramaboxApp } from "./token_dramabox.js";
 
 export async function latest_coming_soon() {
   try {
